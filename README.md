@@ -1,1 +1,1 @@
-# StarWarsWiki
+# Star Wars Wiki
