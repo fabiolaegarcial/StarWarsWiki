@@ -11,11 +11,11 @@ a:link{ text-decoration: none; }
 :root{
 	--bg-color: #ffffff;
 	--text-color: #121212;
-    --accent-color: #ffb300;
-    --secondary-color: #c20505;
-	--gradient-color: -webkit-linear-gradient(180deg, #ffe030, #890000);
+    --accent-color: #ffd900;
+    --secondary-color: #d90000;
+	--gradient-color: -webkit-linear-gradient(180deg, #ffd900, #d90000);
 	--main-font: 2.2rem;
-	--p-font: clamp(.15em, .5em + 1vw , 1em);
+	--p-font: clamp(.25em, .7em + 1vw , 1.4em);
 }
 body{
 	background: var(--bg-color);
@@ -44,18 +44,13 @@ header a{
     display: flex;
     align-items: center;
 }
-.logo{
-    height: clamp(1.5em, 2.5em + 1vw , 3em);
-    cursor: pointer;
-    margin: .2em ;
-}
 .title{
     /* color: var(--accent-color); */
-    background: -webkit-linear-gradient(180deg, #b10000, #000000);
+    background: -webkit-linear-gradient(180deg, #b90000, #000000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;
-    font-size: clamp(.2em, 1em + 1vw , 3em);
+    font-size: clamp(.5em, 1em + 1vw , 3em);
 }
 #menu-icon{
 	font-size: 38px;
@@ -68,13 +63,150 @@ header a{
 }
 .navbar a{
 	font-size: var(--p-font);
-	color: var(--secondary-color);
-	font-weight: 500; 
+	color: var(--text-color);
+	font-weight: 600; 
 	padding: clamp(.3em, .6em + 1vw, 1em);
 	margin: 0 10px;
 	transition: all .40s ease;
 }
 .navbar a:hover{
     transition: all .50s ease;
-	color: var(--accent-color);
+	color: var(--secondary-color);
+}
+
+/*************** MAIN PAGE ***************/
+.main-page{
+	min-height: 60vh;
+}
+
+
+
+/*************** CHARACTER PAGE ***************/
+.films-page{
+	
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.characters-page{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.char-name{
+	font-size: clamp(.5em, 1em + 1vw, 2em);
+	width: 100%;
+	justify-content: center;
+	text-align: center;
+}
+.char-info{
+	padding-left: 5em;
+	display: flex;
+	flex-direction: column;
+	width: 50vw;
+	font-size: clamp(.4em, .8em + 1vw , 1.3em);
+	padding-top: 2em;
+}
+.char-info div{
+	padding-top: 1em;
+}
+.innerText{
+	padding-left: .2em;
+	display: inline;
+	font-weight: 400;
+	text-transform: capitalize;
+}
+
+
+.char-buttons{
+	display: flex;
+	flex-direction: row;
+	width: 50vw;
+	justify-content: center;
+	padding: 2em;
+}
+.char-buttons h5{
+	display: none;
+}
+.char-buttons button{
+	font-size: 1.25em;
+	font-weight: 800;
+	margin: 1em 14em;
+	padding: 0;
+	background: none;
+	border: none;
+	transition-duration: 0.2s;
+}
+button:hover{
+	color: #b90000;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+/*************** FILM PAGE ***************/
+.li-film{
+	font-size: clamp(.35em, .85em + 1vw , 1.7em);
+	color: #b90000;
+	display: flex;
+	justify-content: center;
+	padding: 1.5vw;
+}
+
+
+
+/*************** FOOTER ***************/
+.footer{
+    width: 100%;
+    margin: auto;
+	position: relative;
+	background-color: #121212;
+    padding: 70px 0;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none;
+}
+.footer-col{
+    width: 50%;
+    padding-left: 0vw 5vw;
+}
+.footer-col h4{
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: var(--secondary-color);
+    height: 2px;
+    box-sizing: border-box;
+    width: 10vw;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+    display: block;
+    transform: all 0.4s ease;
+}
+.footer-col ul li a:hover{
+    color: var(--accent-color);
+    padding-left: 10px;
+}
+#row-one{
+	padding-left: 5em;
 }

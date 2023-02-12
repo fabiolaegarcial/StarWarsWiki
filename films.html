@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
-    <title>Star Wars Characters</title>
+    <title>Star Wars Films</title>
 </head>
-<body onload="startupChar(1)">
+<body onload="startupFilm(1)">
     <!-- NAVBAR -->
 	<header>
         <a href="index.html"><h1 class="title">Star Wars Wiki</h1></a>
@@ -16,17 +16,17 @@
 
 		<ul class="navbar">
 			<li><a href="index.html">HOME</a></li>
-			<li><a href="characters.html" style="color: #d90000" class="nav-char">CHARACTERS</a></li>
-            <li><a href="films.html" class="nav-film">FILMS</a></li>
+            <li><a href="characters.html" class="nav-char">CHARACTERS</a></li>
+			<li><a href="films.html" style="color: #d90000" class="nav-film">FILMS</a></li>
 		</ul>
 	</header>
+    
+    <br><br><br><br><br><br><br><br><br>
 
-    <br><br><br><br><br><br><br><br>
 
-
-    <!-- character -->
-    <section class="characters-page">
-        <!-- character information -->
+    <!-- films -->
+    <section class="films-page">
+        <!-- film information -->
         <section class="character">
 
             <div class="char-name">
@@ -34,43 +34,43 @@
             </div>
             <div class="char-info">
                 <div>
-                    <h4 class="char-birth"> </h4>
+                    <h4 class="film-release"> </h4>
                 </div>
                 <div>
-                    <h4 class="char-species"></h4>
+                    <h4 class="film-director"> </h4>
                 </div>
                 <div>
-                    <h4 class="char-gender"> </h4>
+                    <h4 class="film-producer"> </h4>
                 </div>
                 <div>
-                    <h4 class="char-height"> </h4>
+                    <h4 class="film-characters"> </h4>
                 </div>
                 <div>
-                    <h4 class="char-mass"> </h4>
+                    <h4 class="film-planets"> </h4>
                 </div>
                 <div>
-                    <h4 class="char-hair"> </h4>
+                    <h4 class="film-starships"> </h4>
                 </div>
                 <div>
-                    <h4 class="char-skin"> </h4>
+                    <h4 class="film-vehicles"> </h4>
                 </div>
                 <div>
-                    <h4 class="char-eye"> </h4>
-                </div>
-                <div>
-                    <h4 class="char-films"> </h4>
+                    <h4 class="film-opening"> </h4>
                 </div>
             </div>
         <!-- next / previous element -->
             <div class="char-buttons">
-                <div class="previous"><button class="previous-button"  onclick="changeCharPrev()"><</button><h5>0</h5></div>
-                <div class="next"><button class="next-button"onclick="changeCharNext()">></button><h5>2</h5></div>
+                <div class="previous"><button class="previous-button"  onclick="changeFilmPrev()"><</button><h5>0</h5></div>
+                <div class="next"><button class="next-button"onclick="changeFilmNext()">></button><h5>2</h5></div>
             </div>
         </section>
     </section>
 
 
-    <br><br><br><br>
+
+
+    <br><br>
+
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -93,6 +93,6 @@
     </footer>
     
     <!-- SCRIPT -->
-    <script src="char.js"></script>
+    <script src="filmy.js"></script>
 </body>
 </html>
