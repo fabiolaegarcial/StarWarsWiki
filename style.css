@@ -9,8 +9,8 @@
 }
 a:link{ text-decoration: none; }
 :root{
-	--bg-color: #ffffff;
-	--text-color: #121212;
+	--bg-color: #121212;
+	--text-color: #ffffff;
     --accent-color: #ffd900;
     --secondary-color: #d90000;
 	--gradient-color: -webkit-linear-gradient(180deg, #ffd900, #d90000);
@@ -31,9 +31,8 @@ header{
 	right: 0;
 	z-index: 1000;
 	position: fixed;
-	background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(8px);
-	box-shadow: 0px 0px 10px 0 #00000019;
+	background: var(--bg-color);
+	box-shadow: 0px 0px 10px 0 #ffffff4e;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -46,7 +45,7 @@ header a{
 }
 .title{
     /* color: var(--accent-color); */
-    background: -webkit-linear-gradient(180deg, #b90000, #000000);
+    background: -webkit-linear-gradient(180deg, #b90000, #ffffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;
@@ -78,7 +77,13 @@ header a{
 .main-page{
 	min-height: 60vh;
 }
-
+.banner-text{
+	text-align: center;
+	padding-top: clamp(3em, 5em + 1vw, 6em);
+	font-size: clamp(1.5em, 2em + 1vw, 3.5em);
+	font-weight: 400;
+	font-style: italic;
+}
 
 
 /*************** CHARACTER PAGE ***************/
@@ -136,6 +141,7 @@ header a{
 	background: none;
 	border: none;
 	transition-duration: 0.2s;
+	color: #ffffff;
 }
 button:hover{
 	color: #b90000;
